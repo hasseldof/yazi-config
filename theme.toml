@@ -1,0 +1,35 @@
+#[flavor]
+#dark = "kanagawa-dragon"
+
+# [flavor]
+# dark = "catppuccin-macchiato"
+
+[flavor]
+dark = "catppuccin-frappe"
+
+# [flavor]
+# dark = "catppuccin-mocha"
+
+#[flavor]
+#light = "catppuccin-latte"
+
+# [flavor]
+# dark = "tokyo-night"
+
+#[flavor]
+#dark = "gruvbox-dark"
+
+#[flavor]
+#dark = "onedark"
+
+#[flavor]
+#dark = "dracula"
+
+# [flavor]
+# dark = "ayu-dark"
+
+# [flavor]
+# dark = "flexoki-dark"
+
+# [flavor]
+# dark = "monokai-vibrant"
