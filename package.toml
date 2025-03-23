@@ -88,6 +88,11 @@ use = "Lil-Dank/lazygit"
 rev = "9f924e3"
 hash = "2b0c33928986f126d5c5a4cac31a6b46"
 
+[[plugin.deps]]
+use = "Ape/smart-enter"
+rev = "7b84c89"
+hash = "43eb1a1f2291795fb5b0b2ce1206ebee"
+
 [[flavor.deps]]
 use = "gosxrgxx/flexoki-dark"
 rev = "65ba744"
