@@ -19,8 +19,8 @@ title_format   = "yazi: {cwd}"
 [preview]
 wrap            = "yes"
 tab_size        = 2
-max_width       = 600
-max_height      = 900
+max_width       = 1200
+max_height      = 1000
 cache_dir       = ""
 image_delay     = 30
 image_filter    = "triangle"
@@ -91,6 +91,13 @@ fetchers = [
 	# Mimetype
 	{ id = "mime", name = "*", run = "mime", prio = "high" },
 ]
+
+#[[plugin.prepend_fetchers]]
+#id   = "mime"
+#name = "*"
+#run  = "mime-ext"
+#prio = "high"
+
 spotters = [
 	{ name = "*/", run = "folder" },
 	# Code
@@ -151,6 +158,7 @@ prepend_previewers = [
   { name = "*.md", run = "glow" },
   { mime = "{image,audio,video}/*", run = "mediainfo"},
   { mime = "application/x-subrip", run = "mediainfo"},
+  { name = "*/", run = "eza-preview"},
 ]
 
 [input]

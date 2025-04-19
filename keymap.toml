@@ -156,6 +156,27 @@ keymap = [
 	{ on = "<F1>", run = "help", desc = "Open help" },
 ]
 
+# eza-preview
+[[manager.prepend_keymap]]
+on   = [ "E" ]
+run  = "plugin eza-preview"
+desc = "Toggle tree/list dir preview (eza)"
+
+[[manager.prepend_keymap]]
+on   = "-"
+run  = "plugin eza-preview --args='--inc-level'"
+desc = "Increment tree level"
+
+[[manager.prepend_keymap]]
+on   = "_"
+run  = "plugin eza-preview --args='--dec-level'"
+desc = "Decrement tree level"
+
+[[manager.prepend_keymap]]
+on   = "$"
+run  = "plugin eza-preview --args='--toggle-follow-symlinks'"
+desc = "Toggle tree follow symlinks"
+
 # smart-paste
 [[manager.prepend_keymap]]
 on   = "p"
@@ -195,6 +216,36 @@ desc = "Switch or create tab 2"
 on   = [ "<A-3>" ]
 run  = "plugin smart-switch 2"
 desc = "Switch or create tab 3"
+
+[[manager.prepend_keymap]]
+on   = [ "<A-4>" ]
+run  = "plugin smart-switch 3"
+desc = "Switch or create tab 4"
+
+[[manager.prepend_keymap]]
+on   = [ "<A-5>" ]
+run  = "plugin smart-switch 4"
+desc = "Switch or create tab 5"
+
+[[manager.prepend_keymap]]
+on   = [ "<A-6>" ]
+run  = "plugin smart-switch 5"
+desc = "Switch or create tab 6"
+
+[[manager.prepend_keymap]]
+on   = [ "<A-7>" ]
+run  = "plugin smart-switch 6"
+desc = "Switch or create tab 7"
+
+[[manager.prepend_keymap]]
+on   = [ "<A-8>" ]
+run  = "plugin smart-switch 7"
+desc = "Switch or create tab 8"
+
+[[manager.prepend_keymap]]
+on   = [ "<A-9>" ]
+run  = "plugin smart-switch 8"
+desc = "Switch or create tab 9"
 
 # Relative motions
 [[manager.prepend_keymap]]
@@ -248,16 +299,6 @@ on   = [ "g", "i" ]
 run  = "plugin lazygit"
 desc = "run lazygit"
 
-# Smart-enter
-[[manager.prepend_keymap]]
-on   = "<Enter>"
-run  = "plugin smart-enter"
-desc = "Enter the child directory, or open the file"
-
-[[manager.prepend_keymap]]
-on   = "l"
-run  = "plugin smart-enter"
-desc = "Enter the child directory, or open the file"
 
 [tasks]
 
